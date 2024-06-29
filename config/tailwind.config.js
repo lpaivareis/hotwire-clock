@@ -10,7 +10,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        'digital': ['DS-Digital', 'monospace'],
+      },
+      colors: {
+        'clock-text': '#32cd32',
       },
     },
   },
