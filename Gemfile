@@ -49,6 +49,10 @@ gem 'hotwire-rails'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  gem 'rubocop', '~> 1.64', '>= 1.64.1'
+
+  gem 'rubocop-rails', '~> 2.25', '>= 2.25.1'
 end
 
 group :development do
