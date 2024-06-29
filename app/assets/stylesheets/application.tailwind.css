@@ -2,12 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+@font-face {
+  font-family: 'Digital-7';
+  src: url('/fonts/digital-7.ttf') format('truetype');
 }
 
-*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.digital-clock {
+  font-family: 'Digital-7', monospace;
+  color: #32cd32;
+  font-size: 6rem;
+  background: black;
+  padding: 0.2em 0.5em;
+  border-radius: 0.1em;
+  text-shadow: 0 0 0.5em #32cd32;
+}
+
+.text-green-500 {
+  color: #32cd32;
+}
